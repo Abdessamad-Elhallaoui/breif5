@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="aa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+   <link rel="stylesheet" href="sty.css">
+   
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*.sl{
+            width: 100%;
+            position: relative;
+        }
+        .second-part{
+            width: 300%;
+            flex-direction: row;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        .cars{
+            width: 11%;
+        }*/
+    </style>
+</head>
+<body>
+<header id="testtt">
+
+    <div class="menu">
+        <div class="logo">
+            <img src="logo_2x.png" alt="">
+        </div>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>Blog</a></li>
+            <li><a>About Us</a></li>
+        </ul>
+        
+    </div>
+    
+    <div class="content">
+        <h1>All New</h1>
+        <h3> BY LNK </h3>
+        <p>Order your luxury serdan online now.</p>
+        <a class="btn-discover">DISCOVER <i class="fa fa-plus-circle" style="font: size 17PX;color:white"></i></a>
+    </div>
+    <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+<a class="next" onclick="nextSlide(1)">&#10095;</a>
+</header>
+<div class="blank"></div>
+<section>
+    <div class="find">
+        <h1> FIND YOUR VEHICLE NOW </h1>
+        <p>We currently have 10 listings available in our inventory.</p>
+        <select>
+                <option value="all" selected="">Select Collection</option>
+                
+                <option value="best-seller">Best Seller</option>
+                
+                <option value="featured">Featured</option>
+                
+                <option value="hot-product">Hot Product</option>
+                
+                <option value="latest-arrival">Latest Arrival</option>
+                
+                <option value="special-product">Special Product</option>
+                
+                <option value="trend-2016">Trend 2016</option>
+                
+              </select>
+        <select>
+                <option value="" selected="">Select Model</option>
+                <option value="2016-chrysler">2016 Chrysler</option>
+                <option value="aston-martin-v8-houston">Aston Martin V8 Houston</option>
+                <option value="ferrari-hs">Ferrari HS</option>
+                <option value="gtc-325">GTC 325</option>
+                <option value="lck-2016">LCK 2016</option>
+                <option value="ls-skr">LS SKR</option>
+                <option value="porsche-718-boxster">Porsche 718 boxster</option>
+                <option value="porsche-i8s">Porsche i8s</option>
+                <option value="srt-324">SRT 324</option>
+                <option value="srt-329">SRT 329</option>
+                <option value="xeon-gbr">Xeon GBR</option>
+                
+              </select>
+           
+              <select class="filter-price tag-select" id="price-select">
+                <option value="" selected="">Select Price</option>
+                <option value="under-30000">Under $30000</option>
+                <option value="30000-50000">$30000 - $50000</option>
+                <option value="50000-70000">$50000 - $70000</option>
+                <option value="70000-100000">$70000 - $100000</option>
+                <option value="above-100000">Above $100000</option>
+              </select>
+        </select>
+        <a class="btn-find">find car</a>
+    </div>
+</section>
+<div class="blank"></div>
+<section class="collection">
+    <div class="V1 V">
+        <h1>TOP DESIGN</h1>
+        <div class="content_title">
+            <div class="box-content">
+              <p>9 Great Cars for Recent College<br> Graduates</p>
+              <a class="banner-btn">discover</a>
+            </div>
+          </div>
+    </div>
+    <div class="V2 V"><h1>OVER MODEL</h1>
+        <div class="box-content">
+            <p>If beauty is on the inside, the smart<br>passion doesn’t disappoint</p>
+            <a class="banner-btn">discover</a>
+          </div></div>
+    <div class="V3 V"><h1>TREND 2016</h1>
+            <div class="box-content">
+              <p>A harmonious design—pure,<br>uncluttered luxury</p>
+              <a class="banner-btn">discover</a>
+              
+            </div>
+          </div>
+    <div class="V4 V"><h1>NEW COLLECTION</h1>
+            <div class="box-content">
+              <p>Sale off 28% New items<br>Products</p>
+              <a  class="banner-btn">discover</a>
+            </div>
+          </div>
+</section>
+<div class="blank"></div>
+<div class="center-content">
+    <div class="car-degre" >
+        <img id="car-degre" src="./SLIDE/1.png">
+
+    </div>
+    <div class="blank"></div>
+    <div class="range-slider">
+        <div><input class="range-slider__range" type="range" value="0" max="34" min="1" id="myRange"></div>
+        <span>360 Degree Product Viewer</span>
+      </div>
+  
+</div>
+<div class="blank"></div>
+<h4 class="subheading ">
+    New models
+</h4>
+
+
+<p class="subtitle">View all 2016 Over models</p>
+<section class="sl">
+<div class="second-part">
+    
+  <div class="cars" id="cars1"><img src="c1.JPG" id="img1">
+    <div class="description">
+        <h5 id="model1">2016 CHRYSLER</h5>
+        <span class="stars"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span>
+    <div class="content_price">
+        
+          <span class="pricenew" id="price1">$25,000.00</span>
+       
+        
+        <div class="cart">
+            <button class="view" ><i class="fa fa-eye"></i></button>
+            <button type="submit"" class="add" onclick="showpopup(1)">
+                <span>
+                    <i class="fa fa-plus-circle"></i>
+                    Select options
+                </span>
+                </button>
+            <button class="wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="cars" id="cars2"><img src="C2.JPG" id="img2"> <div class="description">
+    <h5 id="model2">FERRARI HS</h5>
+    <span class="stars"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span>
+<div class="content_price">
+    
+      <span class="pricenew" id="price2">$45,999.00</span>
+    <div class="cart">
+        <button class="view" ><i class="fa fa-eye" ></i></button>
+        <button type="submit"" class="add"onclick="showpopup(2)" >
+            <span>
+                <i class="fa fa-plus-circle"></i>
+                Select options
+            </span>
+            </button>
+        <button class="wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</div></div>
+<div class="cars" id="cars3"><img src="C3.JPG" id="img3"> <div class="description">
+    <h5 id="model3">ASTON MARTIN V8 HOUSTON</h5>
+    <span class="stars"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span>
+<div class="content_price">
+    
+      <span class="pricenew" id="price3">$200,000.00</span>
+    
+   
+    <div class="cart">
+        <button class="view" ><i class="fa fa-eye" ></i></button>
+        <button  class="add" onclick="showpopup(3)" >
+            <span>
+                <i class="fa fa-plus-circle"></i>
+                Select options
+            </span>
+            </button>
+        <button class="wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</div></div>
+<div class="cars" id="cars4"><img src="C4.JPG" id="img4"> <div class="description">
+    <h5 id="model4">ASTON MARTIN V8 HOUSTON</h5>
+    <span class="stars"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span>
+<div class="content_price">
+    
+      <span class="pricenew" id="price4">$200,000.00</span>
+    
+   
+    <div class="cart">
+        <button class="view" ><i class="fa fa-eye" ></i></button>
+        <button  class="add" onclick="showpopup(4)" >
+            <span>
+                <i class="fa fa-plus-circle"></i>
+                Select options
+            </span>
+            </button>
+        <button class="wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</div></div>
+<div class="cars" id="cars5"><img src="C5.JPG" id="img5"> <div class="description">
+    <h5 id="model5">ASTON MARTIN V8 HOUSTON</h5>
+    <span class="stars"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span>
+<div class="content_price">
+    
+      <span class="pricenew" id="price5">$200,000.00</span>
+    
+   
+    <div class="cart">
+        <button class="view" ><i class="fa fa-eye" ></i></button>
+        <button  class="add" onclick="showpopup(5)" >
+            <span>
+                <i class="fa fa-plus-circle"></i>
+                Select options
+            </span>
+            </button>
+        <button class="wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</div></div>
+<div class="cars" id="cars6"><img src="C6.JPG" id="img6"> <div class="description">
+    <h5 id="model6">ASTON MARTIN V8 HOUSTON</h5>
+    <span class="stars"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span>
+<div class="content_price">
+    
+      <span class="pricenew" id="price6">$200,000.00</span>
+    
+   
+    <div class="cart">
+        <button class="view" ><i class="fa fa-eye" ></i></button>
+        <button  class="add" onclick="showpopup(6)" >
+            <span>
+                <i class="fa fa-plus-circle"></i>
+                Select options
+            </span>
+            </button>
+        <button class="wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</div></div>
+
+
+</div><a class="prev" onclick="playSlide(-1)" id="prev">&#10094;</a>
+    <a class="next" onclick="playSlide(1)" id="next">&#10095;</a></section>
+<div class="blank">
+</div>
+<div class="blank">
+</div>
+<div class="quotes">
+    <div class="content-center">
+        
+              
+            <h3 class="banner-title">The all - new 2016</h3>
+            
+            
+            <p>Styling &amp; Exterior</p>
+            
+            
+            <a class="shop-now">Shop now <i class="fa fa-plus-circle" style="font-size:17px;color:white"></i></a>
+            
+          
+    </div>
+</div>
+<div class="blank">
+</div>
+<div class="items">
+    <div class="item"> <i class="zmdi zmdi-tune" ></i>
+        <span class="vendor-description">build your over</span>
+    </div>
+    <div class="item"> <i class="zmdi zmdi-copy"></i>
+        <span class="vendor-description">build your over</span>
+    </div>
+    <div class="item"> <i class="zmdi zmdi-dot-circle" ></i>
+        <span class="vendor-description">build your over</span>
+    </div>
+    <div class="item"> <i class="zmdi zmdi-fullscreen" ></i>
+        <span class="vendor-description">build your over</span>
+    </div>
+</div>
+<div class="blank"></div>
+<div class="blank"></div>
+<div class="galerie">
+    <div class="img1">
+        <img src="./galerie/gallery-img1.jpg">
+    </div>
+    <div class="img2">
+        <img src="./galerie/gallery-img2.jpg">
+    </div>
+    <div class="img3">
+        <img src="./galerie/gallery-img3.jpg">
+    </div>
+    <div class="img4"><img src="./galerie/gallery-img4.jpg"></div>
+    <div class="img5"><img src="./galerie/gallery-img5.jpg"></div>
+    <div class="img6"><img src="./galerie/gallery-img6.jpg"></div>
+    <div class="img7"><img src="./galerie/gallery-img7.jpg"></div>
+    <div class="img8"><img src="./galerie/gallery-img8.jpg"></div>
+</div>
+<div class="blank"></div>
+<footer>
+    <div class="social"> <ul>
+        <li><a><i class="fa fa-facebook"></i></a></li>
+        <li><a><i class="fa fa-twitter"></i></a></li>
+        <li><a><i class="fa fa-instagram"></i></a></li>
+        <li><a><i class="fa fa-pinterest"></i></a></li>
+        <li><a><i class="fa fa-google-plus"></i></a></li>
+    </ul>
+    </div>
+    <div class="blank"></div>
+    <div class="footer">
+        <div class="who-we-are">
+            <h3><img src="logo_2x.png" alt=""></h3>
+            <p class="description2">
+                We are an automotive company that takes inspired design, relentless innovation and uninhibited performance and turns them into passionate, moving experiences. But, that's only part of our DNA.</p>
+        </div>
+        <div class="contact">
+            <h3>OFFICIAL</h3>
+            <p class="description2"><i class="zmdi zmdi-map"></i> 123 Third Street Fifth Avenue, Manhattan,  New York, USA</p>
+            <p class="description2"><i class="zmdi zmdi-phone-msg"></i> + 844 123 456 78 90</p>
+             <p class="description2"><i class="zmdi zmdi-email"></i> contacts@over.com</p>
+        </div>
+        <div class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <p class="description2">Sign up today to receive offers on used cars and rental car discounts.</p>
+        </div>
+    </div>
+</footer>
+<div class="popup" id="popup">
+    
+    <div class="row">
+        
+<div class= "register-box" id="register-box">
+    <h1>Create Account</h1>
+    <form id="create_customer">
+        <span onclick="document.getElementById('popup').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h3 class="page-subheading">Your personal information</h3>
+        <div class="first-info">
+        <label for="FirstName" class="label-register">First Name</label>
+        <input type="text" name="customer[first_name]" id="FirstName" class="form-control" placeholder="First Name" autocapitalize="words" autofocus="">
+        <label for="LastName" class="label-register">Last Name</label>
+        <input type="text" name="customer[last_name]" id="LastName" class="form-control" placeholder="Last Name" autocapitalize="words">
+        <label for="Email" class="label-register">Email</label>
+        <input type="email" name="customer[email]" id="Email" placeholder="Email" class="form-control " autocorrect="off" autocapitalize="off">
+        <label for="CreatePassword" class="label-register">Password</label>
+        <input type="password" name="customer[password]" id="CreatePassword" placeholder="Password" class="form-control ">
+       </div>
+        <div class="second-info">
+            <label for="Address" class="label-register">Address</label>
+        <input type="text" name="customer[Address]" id="adress" class="form-control" placeholder="Adress" autocapitalize="words" autofocus="">
+        <label for="city" class="label-register">City</label>
+        <input type="text" name="customer[city]" id="city" class="form-control" placeholder="City" autocapitalize="words">
+        <label for="phone" class="label-register">Phone Number</label>
+        <input type="text" name="customer[phone]" id="phone" class="form-control" placeholder="0000000000">
+        </div>
+       
+    </form><p><button value="Create an account" class="btn btn-outline" onclick="validate()">
+                <span>
+                    <i class="fa fa-user"></i>
+                    Create an account
+                </span>
+                </button></p>
+</div>
+<div class="final-step" id="final-step">
+    <form class="form-confirm">
+        <span onclick="document.getElementById('popup').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <div class="ur-items">
+        <h2 id="titlechoose">Aston Martin V8 Houston</h2>
+        <img src="C3.JPG" id="carxho"><h3 id="prixchos"></h3></div>
+        
+     <div class="ur-info">
+        <label>Full name :</label><label id="contact"></label><br>
+        <label>Your Email :</label><label id="email"></label><br>
+        <label>Phone Number :</label><label id="pho"></label><br>
+        <label>Address :</label><label id="adr"></label><br>
+    </div>
+</form>
+    <p>
+        <button value="Confirme" class="btn btn-outline">
+            <span>
+                Confirme
+            </span>
+            </button>
+    </p>
+</div>
+    </div>
+
+</div>
+<script>
+/*var prevBtn = document.getElementById("prev");
+var nextBtn = document.getElementById("next");
+var contentWrapp = document.getElementById("second-part");
+var x =0;
+
+
+
+prevBtn.addEventListener("click",prevSlid);
+nextBtn.addEventListener("click",nextSlid);
+
+function prevSlid(){
+    contentWrapp.scrollLeft = x - 200;
+    x = contentWrapp.scrollLeft;
+    console.log(1);
+}
+function nextSlid(){
+    contentWrapp.scrollLeft = x +  200;
+    x = contentWrapp.scrollLeft;
+    console.log(2);
+
+}*/
+
+
+    
+
+
+
+
+
+
+
+    
+    var i;
+    
+    function showpopup(cindex){
+        var indexb = document.getElementById(""+cindex);
+        i=cindex;
+        console.log(i);
+        rempconfirmform();
+      document.getElementById("popup").style.display="block";
+    }
+    
+    
+    var slider = document.getElementById("myRange");
+   slider.oninput = function() {
+    document.getElementById("car-degre").src= "./SLIDE/"+slider.value+".png";
+  }
+
+
+    /*var slider = document.getElementById("myRange");
+    var output = document.getElementById("car-degre");
+   slider.oninput = function() {
+  output.style.backgroundImage =  "url('./SLIDE/"+slider.value+".png')";}
+*///////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////
+
+
+
+function confirmform(){
+        
+        console.log('heloo');
+        document.getElementById("register-box").style.display="none";
+        document.getElementById("final-step").style.display="block";
+
+    }
+
+  function validate() {
+      
+      if( document.getElementById('FirstName').value == "" ) {
+         alert( "Please provide your name!" );
+         document.getElementById('FirstName').focus() ;
+         return false;
+      }
+      if( document.getElementById('LastName').value == "" ) {
+         alert( "Please provide your name!" );
+         document.getElementById('LastName').focus() ;
+         return false;
+      }
+      if( document.getElementById('Email').value == "" ) {
+         alert( "Please provide your Email!" );
+         document.getElementById('Email').focus() ;
+         return false;
+      }
+      else{
+        validateEmail();
+      }
+      if( document.getElementById('CreatePassword').value == "" )
+      {
+         alert( "Please provide a Password with 8 Caracter at least" );
+         document.getElementById('CreatePassword').focus() ;
+         return false;
+      }
+      if( document.getElementById('city').value == "" ) {
+         alert( "Please provide your City!" );
+         document.getElementById('city').focus() ;
+         return false;
+      }
+      if( document.getElementById('phone').value == "" ) {
+         alert( "Please provide your Phone number!" );
+         document.getElementById('phone').focus() ;
+         return false;
+      }
+     confirmform();
+     rempconfirmform();
+      return( true );
+      
+   }
+
+
+
+  function validateEmail() {
+         var emailID = document.getElementById("Email").value;
+          var atpos = emailID.indexOf("@");
+         var dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         return( true );
+         
+      }
+      
+    function rempconfirmform(){
+          var Fname =document.getElementById('FirstName').value;
+          var Lname =document.getElementById('LastName').value;
+          var mail = document.getElementById('Email').value;
+          var NUM = document.getElementById('phone').value;
+          var adr =document.getElementById('adress').value;
+          var carchoose=document.getElementById("img"+i).src;
+          var prix =document.getElementById("price"+i).textContent;
+          var ti=document.getElementById("model"+i).textContent;
+        
+          document.getElementById("contact").innerHTML=Fname +" "+Lname;
+          document.getElementById("email").innerHTML=mail;
+          document.getElementById("pho").innerHTML=NUM;
+          document.getElementById("adr").innerHTML=adr;
+          document.getElementById("carxho").src=carchoose;
+          document.getElementById("prixchos").innerHTML=prix;
+          document.getElementById('titlechoose').innerHTML=ti;
+
+      }
+      var slides=[];
+    var slideIndex = 1;
+    showSlide(slideIndex);
+     function nextSlide(n) 
+     {
+         slideIndex += n;
+         if (slideIndex > slides.length)
+         {
+             slideIndex = 1;
+             
+         } 
+         if (slideIndex < 1) 
+         {
+             slideIndex = slides.length;
+             }   
+
+         showSlide(slideIndex);
+     }
+
+    function showSlide(n)
+      {
+     
+     var i;
+
+     for(i=0;i<3;i++){
+         var j=i+1;
+          slides[i]="./"+j+".jpg";
+        }
+        var put = document.getElementById("testtt");
+        put.style.backgroundImage = "url(" + slides[n-1] + ")";
+        }
+
+        ////////////////////////////////////
+        /////////////////////////
+        /////////////
+        ////////
+        ////
+        //
+       
+        
+            var slideIndex2 = 2;
+            var j=0;
+            Slide2(slideIndex2,j);
+            function playSlide(n) {
+                
+                j+=n;
+                Slide2(slideIndex2 += n,j);
+               
+               
+            }
+            
+            function Slide2(n,j) {
+                
+                var i;
+                var k=0;
+                var Tslid=document.getElementsByClassName("cars");
+               // if (n > Tslid.length) {slideIndex2 = 1}
+                  for (i = 0; i < Tslid.length; i++) {
+                    Tslid[i].style.display = "none";
+                }
+                if(j<0){
+                    console.log(j);
+                    j=0
+                    var q= Tslid.length-1;
+                    Tslid[q].style.display="block";
+                    
+                    for(i=j;i<slideIndex2+1;i++)
+                    {
+                        Tslid[i].style.display = "block";}
+                    }
+              else{ 
+               for(i=j;i<slideIndex2+1;i++)
+               {
+                  
+                   Tslid[i].style.display = "block";
+                   
+               }
+            } 
+               
+            }
+            
+            function fix(){
+                 var slidex =Tslid.length;var cpt =2;
+                slidex-=n
+                if(slideIndex2<2)
+                {
+                    Tslid[slidex].style.display="block";
+                    for(i=j;i<slideIndex2-cpt;i++){
+                        Tslid[i].style.display="block";
+                    }
+                    
+
+                }
+            }
+        
+</script>
+</body>
+</html>
