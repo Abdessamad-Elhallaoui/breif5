@@ -308,6 +308,7 @@ header {
   line-height: 37px;
   padding: 0px 15px;
   border: 2px solid #e82c2a;
+  display: none;
 }
 
 .cart .add {
@@ -332,6 +333,7 @@ header {
 }
 
 .wishlist {
+  display: none;
   background-color: #e82c2a;
   font-size: 14px;
   color: #fff;
@@ -751,12 +753,27 @@ footer {
 }
 @media (max-width:500px)
 {
+  .menu ul{
+    display: none;
+  }
+  .content {
+    
+    font-size: 12px;
+    margin: auto;
+  }
+  .content a{
+    margin: auto;
+    padding: 10px 25px;
+  }
   .collection .V{
     display: none;
     width: 100%;
   }
   .collection .V1{
     display: block;
+  }
+  .galerie div{
+    width: 100%;
   }
 
     .footer{
@@ -777,8 +794,8 @@ footer {
     .galerie div{
         width: 100%;
     }
-    .galerie .img3, .galerie .img5 {
-        width: 40%;
+    .galerie .img3 , .galerie .img5 {
+      width: 100%;
     }
     .quotes{
         background-attachment: initial;
@@ -791,7 +808,6 @@ footer {
     }
     .cars{
       display: none;
-      
     }
     
 }
